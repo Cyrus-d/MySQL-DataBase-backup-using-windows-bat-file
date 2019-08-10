@@ -9,7 +9,7 @@ set mysqlDataDir="D:\wamp\bin\mysql\mysql5.7.14\data"
 set zip="C:\Program Files\7-Zip\7z.exe"
 
 :: get date
-for /F "tokens=2-4 delims=/ " %%i in ('date /t') do (
+for /f "tokens=1-4 delims=/ " %%i in ("%date%") do (
 	set mm=%%i
 	set dd=%%j
 	set yy=%%k
